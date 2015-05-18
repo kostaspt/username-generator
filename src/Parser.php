@@ -3,7 +3,7 @@
 class Parser {
 
     /**
-     * It parses the given full name to generate a username
+     * It parses the given full name to generate a username.
      *
      * @param  string $fullName
      * @param  string $glue
