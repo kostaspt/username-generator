@@ -2,6 +2,13 @@
 
 class Parser {
 
+    /**
+     * It parses the given full name to generate a username
+     *
+     * @param  string $fullName
+     * @param  string $glue
+     * @return string
+     */
     public function parse($fullName, $glue = '')
     {
         if (mb_detect_encoding($fullName) !== 'ASCII')
