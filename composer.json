@@ -1,0 +1,24 @@
+{
+    "name": "kostaspt/username-generator",
+    "description": "Create username based on full name.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Konstantinos Pittas",
+            "email": "konstantinos.pittas@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/database": "~5.0"
+    },
+    "require-dev": {
+        "phpspec/phpspec": "~2.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "KostasPt\\UsernameGenerator\\": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}
