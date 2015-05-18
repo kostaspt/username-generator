@@ -17,8 +17,7 @@ class ParserSpec extends ObjectBehavior
 
     function it_parses_a_full_name_adding_dash()
     {
-        $this->delimiter = '-';
-        $this->parse('John Doe')->shouldReturn('john-doe');
+        $this->parse('John Doe', '-')->shouldReturn('john-doe');
     }
 
     function it_parses_a_bigger_full_name()
@@ -28,8 +27,7 @@ class ParserSpec extends ObjectBehavior
 
     function it_parses_a_bigger_full_name_adding_dash()
     {
-        $this->delimiter = '-';
-        $this->parse('Mr. John Doe')->shouldReturn('mr-john-doe');
+        $this->parse('Mr. John Doe', '-')->shouldReturn('mr-john-doe');
     }
 
     function it_parses_a_full_name_unicode()

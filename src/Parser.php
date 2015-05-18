@@ -2,9 +2,7 @@
 
 class Parser {
 
-    public $delimiter = '';
-
-    public function parse($fullName)
+    public function parse($fullName, $glue = '')
     {
         if (mb_detect_encoding($fullName) !== 'ASCII')
         {
@@ -16,7 +14,7 @@ class Parser {
             $username = trim($fullName);
 
             // Replace whitespace with underscores
-            $username = preg_replace('/\W+/', $this->delimiter, $username);
+            $username = preg_replace('/\W+/', $glue, $username);
 
             // Lowercase all letters
             $username = strtolower($username);
