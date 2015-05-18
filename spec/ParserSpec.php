@@ -34,14 +34,4 @@ class ParserSpec extends ObjectBehavior
     {
         $this->parse('Τζον Ντο')->shouldReturn('user');
     }
-
-    // function it_parses_appends_an_enum_on_same_username()
-    // {
-    //     $this->parse('John Doe', '')->shouldReturn('johndoe1');
-    // }
-
-    // function it_parses_appends_an_enum_on_same_username_for_unicode_full_names()
-    // {
-    //     $this->parse('Τζον Ντο', '')->shouldReturn('user2');
-    // }
 }
