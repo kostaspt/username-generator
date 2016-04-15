@@ -1,22 +1,22 @@
-<?php namespace KostasPt\UsernameGenerator;
+<?php
 
-class Parser {
+namespace KostasPt\UsernameGenerator;
 
+class Parser
+{
     /**
      * It parses the given full name to generate a username.
      *
-     * @param  string $fullName
-     * @param  string $glue
+     * @param string $fullName
+     * @param string $glue
+     *
      * @return string
      */
     public function parse($fullName, $glue = '')
     {
-        if (mb_detect_encoding($fullName) !== 'ASCII')
-        {
+        if (mb_detect_encoding($fullName) !== 'ASCII') {
             $username = 'user';
-        }
-        else
-        {
+        } else {
             // Remove trailing spaces
             $username = trim($fullName);
 
